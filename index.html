@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+   
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Fashion Store</title>
+  </head>
+
+  <body>
+   <!-- Header-->
+<div class="backdrop"></div>
+<header>
+  <span id="navbar-toggle">
+    <i class="fas fa-bars"></i>
+  </span>
+  <nav class="navbar">
+    <div class="brand">
+      <div class="brand-img"> 
+        <img src="img/logo.jpeg" class="brand-logo" alt="Brand" />
+      </div>
+     
+    </div>
+    <ul id="main-nav">
+      <li><a class="current"  href="index.html">Home</a></li>
+      <li><a  href="promo.html">Promo</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+  </nav>
+
+
+
+      <div class="sideDrawer-button">
+        <button id="toggle" class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+
+        <div class="sideDrawer-logo">
+          <img src="img/logo.jpeg" class="brand-logo" alt="Brand" />
+        </div>
+      </div>
+
+    </div>
+      <nav id="mobileNav" class="main-nav__mobile">
+        <div class="closing-button">
+          <a href="javascript:void(0)" class="closebtn">&times;</a>
+        </div>
+
+        <div class="mobile-nav__items">
+          <a href="index.html" class="active">
+            Home
+          </a>
+
+          <a href="promo.html">
+          Promo
+          </a>
+
+          <a href="pricing.html">
+            Pricing
+          </a>
+
+        </div>
+      </nav>
+    </header>
+
+
+    
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="img">
+          <img src="./img/freestocks-_3Q3tsJ01nc-unsplash.jpg" />
+     </div>
+     <div class="text">Caption Two
+      <a href="pricing.html" class="btn btn--animated">Learn More</a>
+       </div>
+        
+      </div>
+
+      <div class="mySlides fade">
+        <div class="img">
+          <img src="./img/jordan-whitfield-faStDXKctu0-unsplash.jpg" />
+        </div>
+      <div class="text">Caption Two
+<a href="pricing.html" class="btn btn--animated ">Learn More</a>
+ </div>
+     </div>
+
+      <div class="mySlides fade"> 
+        <div class="img">
+          <img src="./img/tamara-bellis-IwVRO3TLjLc-unsplash.jpg" />
+        </div>
+      <div class="text">Caption Two
+        <a href="pricing.html" class="btn btn--animated">Learn More</a>
+      </div>
+       </div>
+
+      <a class="prev" onclick="plusSlides(1)"></a>
+      <a class="next" onclick="plusSlides(1)"></a>
+    </div>
+    <br />
+
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    
+    <!--Section-A-->
+<!-- 
+    <section id="a">
+      <div class="container">
+        <div class="container-text">
+          <h1>Delicous</h1>
+          <h3>CAKES FOR YOU</h3>
+          <p>Cakes n More offers the best cakes for you</p>
+          <button href="pricing.html" class="btn" >Place Order</button>
+        </div>
+        <div class="container-img">
+          <img src="img/cake1.png" class="cakee" alt="" />
+        </div>
+      </div>
+    </section> -->
+    <!-- Section-B
+    <section id="b">
+      <div class="desc">
+        <div class="desc-text">
+          <h1>about us</h1>
+          <p>
+            Cakes n More is a brand which bases on production of your favourite
+            confectionaries all to suit your taste. Our products span across
+            cakes, doughnuts, cupcakes and cookies all for an affordable price.
+            We perform home deliveries to your door step at your convinence and
+            your satisfaction is our number one priority.
+          </p>
+        </div>
+        <div class="desc-img">
+          <img src="./strawcake.jpg" class="img" alt="" />
+        </div>
+      </div>
+    </section> -->
+
+    <section>
+      <div class="about">
+        <div class="about-text">
+          <h1>about us</h1>
+          <p>
+            Cakes n More is a brand which bases on production of your favourite
+            confectionaries all to suit your taste. Our products span across
+            cakes, doughnuts, cupcakes and cookies all for an affordable price.
+            We perform home deliveries to your door step at your convinence and
+            your satisfaction is our number one priority.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+    <!--Section-C-->
+    <section id="c">
+      <h1>Our Designs</h1>
+      <div class="cake">
+        <div class="cake-img">
+          <div class="cake-image">
+            <img src="img/girl5.jpg" alt="" />
+          </div>
+          <p>Nike Running swoosh shorts in grey</p>
+        </div>
+        <div class="cake-img">
+          <div class="cake-image">
+            <img src="img/girl6.jpg" alt="" />
+          </div>
+          <p> split sleeve mini dress with obi belt in terracotta</p>
+        </div>
+        <div class="cake-img">
+          <div class="cake-image">
+            <img src="img/girl7.jpg" alt="" />
+          </div>
+          <p> nipped in waist mini dress in black</p>
+        </div>
+        <div class="cake-img">
+          <div class="cake-image">
+            <img src="img/girl3.jpg" alt="" />
+          </div>
+          <p>LUXE cowl neck all over sequin mini cami dressr</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Section-D-->
+    <section id="contact-us">
+      <h1>Contact Us</h1>
+      <form class="form" action="contact_form.php">
+        <div class="form-container">
+          <div class="form-group">
+            <label htmlFor="Name"> </label>
+            <input type="text" name="name" placeholder="name" />
+          </div>
+          <div class="form-group">
+            <label htmlFor="email"></label>
+            <input type="email" name="email" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <label htmlFor="password"> </label>
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+          <div class="form-group">
+            <label htmlFor="password"> </label>
+            <input type="password" name="confirm-password" placeholder="Confirm Password" />
+          </div>
+          <textarea
+            class="text-input message-input"
+            placeholder=" Message"
+            name="message"
+          ></textarea>
+          <input type="submit" value="submit" class="button" />
+        </div>
+      </form>
+    </section>
+   <!--Footer-->
+ <footer>
+  <div class="footer">
+    <div class="footer-div">
+      <div class="brand">
+        <img src="img/logo.jpeg" class="brand-logo" alt="" />
+
+      </div>
+      
+      
+    </div>
+    <div class="py-2 footer-div">
+      <p class="contact">
+        <span class="contact-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </span>
+        <span class="contact-text">Beside Matrix Filling Station, Otokutu, Delta State</span>
+      </p>
+      <!-- <i class="fas fa-map-marker-alt py">
+        Beside Matrix Filling Station, Otokutu, Delta State
+      </i> -->
+      <p class="contact">
+        <span class="contact-icon">
+          <i class="fas fa-phone"></i>
+        </span>
+        <span class="contact-text">(0)813-031-4493</span>
+      </p>
+
+      <p class="contact">
+        <span class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span class="contact-text">Ameh.clinton@gmail.com</span>
+      </p>
+      <!-- <i class="fas fa-phone py"> (0)813-031-4493</i>
+      <i class="fas fa-envelope py"> Ameh.clinton@gmail.com</i> -->
+    </div>
+    <div class="py-2 my-1 lead footer-div" id="footer-last">
+      <h3 class="my">About The Company</h3>
+      <p>
+        We're the No. 1 Online Bakeshop and we deliver delectable cakes and
+        confectioners at very affordable prices. We're your plug for
+        everything flour, butter, eggs and sugar..
+      </p>
+      <div class="social my">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+  <p class="watermark">Code$Ville&copy; 2020</p>
+
+
+</footer>
+
+
+
+    <script src="./index.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>

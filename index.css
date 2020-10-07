@@ -1,0 +1,334 @@
+:root {
+  --primary-color: #800080;
+  --white-color: #fff;
+  --light-color: #fafafa;
+  --dark-color: #333;
+  --success-color: #28a745;
+}
+
+.mySlides {
+  display: none;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  margin-top: 8rem;
+}
+
+.mySlides.img {
+  width: 100%;
+  height: 100%;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 3rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 30px;
+  display: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-radius: 10rem;
+  position: absolute;
+  width: 30%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 400px) {
+  .text {
+    color: #f2f2f2;
+    font-size: 2rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .btn {
+    background: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    border-radius: 1rem;
+    position: absolute;
+    padding: 1rem 2rem;
+    top: 65%;
+    left: 30%;
+    width: 40%;
+    text-align: center;
+  }
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  display: none;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+@media only screen and (min-width: 400px) {
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .text {
+    color: #f2f2f2;
+    font-size: 3rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  .btn .btn:link,
+  .btn:visited {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 40px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    width: 30%;
+    text-align: center;
+    transition: all 0.2s;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  }
+
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+
+  .btn:active,
+  .btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  .btn--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .text {
+    color: #f2f2f2;
+    font-size: 3.7rem;
+    padding: 8px 14px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .btn .btn:link,
+  .btn:visited {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 45px;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    width: 20%;
+    text-align: center;
+  }
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
